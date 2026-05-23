@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Collections | KANSYA Archive V.01</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Inter:wght@400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- GLOBAL NAVIGATION -->
+  <nav class="navbar">
+    <div class="container nav-container">
+      <div class="logo">
+        <a href="index.html"><img src="kansya-logo.png" alt="KANSYA" onerror="this.src='kansya-logo-2.png'"></a>
+      </div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="collections.html" class="active">Collections</a></li>
+        <li><a href="artisans.html">Shop from Artisans</a></li>
+        <li><a href="story.html">Our Story</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="nav-icons">
+        <a href="collections.html">🔍</a>
+        <a href="#">♡</a>
+        <a href="cart.html">🛒<span class="cart-count" id="cart-count">0</span></a>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <div class="container">
+      <div class="page-header">
+        <h1>ARCHIVE V.01</h1>
+      </div>
+
+      <div class="filter-bar">
+        <div class="filter-pills">
+          <button class="pill active" data-filter="all">All</button>
+          <button class="pill" data-filter="sacred-geometry">Sacred Geometry</button>
+          <button class="pill" data-filter="totemic-animals">Totemic Animals</button>
+          <button class="pill" data-filter="ritual-vessels">Ritual Vessels</button>
+          <button class="pill" data-filter="jewellery">Jewellery</button>
+          <button class="pill" data-filter="masks">Masks</button>
+        </div>
+        <div class="sort-search">
+          <select id="sort-select" class="sort-select">
+            <option value="newest">Newest</option>
+            <option value="low">Price Low–High</option>
+            <option value="high">Price High–Low</option>
+          </select>
+          <input type="text" placeholder="Search archive..." class="search-input">
+        </div>
+      </div>
+
+      <div class="product-grid" id="product-grid">
+        <!-- 1. Figurine Pendant -->
+        <a href="product.html" class="product-card" data-category="jewellery" data-price="6500">
+          <div class="product-img">
+            <img src="Figurine%20Pendant.JPG" alt="Figurine Pendant" onerror="this.style.display='none'; this.parentNode.innerHTML='X'">
+<img src="pics 2/figurine pendant.png" alt="Figurine Pendant - In Use" class="hover-img">
+          </div>
+          <div class="product-info">
+            <h3>Figurine Pendant</h3>
+            <div class="product-price">₹6,500</div>
+            <div class="product-artisan">Sujata Behera • Dhenkanal, Odisha</div>
+          </div>
+        </a>
+
+        <!-- 2. Earrings -->
+        <a href="product.html" class="product-card" data-category="jewellery" data-price="1800">
+          <div class="product-img">
+            <img src="Earrings.JPG" alt="Earrings" onerror="this.style.display='none'; this.parentNode.innerHTML='X'">
+            <img src="pics 2/dhokra earrings.png" alt="Earrings - In Use" class="hover-img">
+          </div>
+          <div class="product-info">
+            <h3>Dhokra Earrings</h3>
+            <div class="product-price">₹1,800</div>
+            <div class="product-artisan">Ramesh Mohapatra • Dhenkanal, Odisha</div>
+          </div>
+        </a>
+
+        <!-- 3. Necklace -->
+        <a href="product.html" class="product-card" data-category="jewellery" data-price="3200">
+          <div class="product-img">
+            <img src="necklace.JPG" alt="Necklace" onerror="this.style.display='none'; this.parentNode.innerHTML='X'">
+            <img src="pics 2/necklace.png" alt="Necklace - In Use" class="hover-img">
+          </div>
+          <div class="product-info">
+            <h3>Dhokra Necklace</h3>
+            <div class="product-price">₹3,200</div>
+            <div class="product-artisan">Ramesh Mohapatra • Dhenkanal, Odisha</div>
+          </div>
+        </a>
+
+        <!-- 4. Choker -->
+        <a href="product.html" class="product-card" data-category="jewellery" data-price="4800">
+          <div class="product-img">
+            <img src="Choker.JPG" alt="Choker" onerror="this.style.display='none'; this.parentNode.innerHTML='X'">
+            <img src="pics 2/choker.png" alt="Choker - In Use" class="hover-img">
+          </div>
+          <div class="product-info">
+            <h3>Traditional Choker</h3>
+            <div class="product-price">₹4,800</div>
+            <div class="product-artisan">Sujata Behera • Dhenkanal, Odisha</div>
+          </div>
+        </a>
+
+        <!-- 5. Pendant -->
+        <a href="product.html" class="product-card" data-category="jewellery" data-price="2400">
+          <div class="product-img">
+            <img src="pendant.JPG" alt="Pendant" onerror="this.style.display='none'; this.parentNode.innerHTML='X'">
+            <img src="pics 2/pendant.png" alt="Pendant - In Use" class="hover-img">
+          </div>
+          <div class="product-info">
+            <h3>Sacred Pendant</h3>
+            <div class="product-price">₹2,400</div>
+            <div class="product-artisan">Ramesh Mohapatra • Dhenkanal, Odisha</div>
+          </div>
+        </a>
+
+        <!-- 6. Deer -->
+        <a href="product.html" class="product-card" data-category="totemic-animals" data-price="8500">
+          <div class="product-img">
+            <img src="deer.JPG" alt="Deer" onerror="this.style.display='none'; this.parentNode.innerHTML='X'">
+            <img src="pics 2/deer.png" alt="Deer - In Use" class="hover-img">
+          </div>
+          <div class="product-info">
+            <h3>Totemic Deer</h3>
+            <div class="product-price">₹8,500</div>
+            <div class="product-artisan">Lata Pradhan • Dhenkanal, Odisha</div>
+          </div>
+        </a>
+
+        <!-- 7. Durga Mask -->
+        <a href="product.html" class="product-card" data-category="masks" data-price="15000">
+          <div class="product-img">
+            <img src="durga%20mask.JPG" alt="Durga Mask" onerror="this.style.display='none'; this.parentNode.innerHTML='X'">
+            <img src="pics 2/durga mask.png" alt="Durga Mask - In Use" class="hover-img">
+          </div>
+          <div class="product-info">
+            <h3>Durga Mask</h3>
+            <div class="product-price">₹15,000</div>
+            <div class="product-artisan">Lata Pradhan • Dhenkanal, Odisha</div>
+          </div>
+        </a>
+
+        <!-- 8. Key Holder -->
+        <a href="product.html" class="product-card" data-category="sacred-geometry" data-price="1200">
+          <div class="product-img">
+            <img src="key%20holder.JPG" alt="Key Holder" onerror="this.style.display='none'; this.parentNode.innerHTML='X'">
+            <img src="pics 2/key holder.png" alt="Key Holder - In Use" class="hover-img">
+          </div>
+          <div class="product-info">
+            <h3>Brutalist Key Holder</h3>
+            <div class="product-price">₹1,200</div>
+            <div class="product-artisan">Sujata Behera • Dhenkanal, Odisha</div>
+          </div>
+        </a>
+
+        <!-- 9. Peacock Pen Stand -->
+        <a href="product.html" class="product-card" data-category="ritual-vessels" data-price="2800">
+          <div class="product-img">
+            <img src="peacock%20pen%20stand.JPG" alt="Peacock Pen Stand" onerror="this.style.display='none'; this.parentNode.innerHTML='X'">
+            <img src="pics 2/peacock pen stand.png" alt="Peacock Pen Stand - In Use" class="hover-img">
+          </div>
+          <div class="product-info">
+            <h3>Peacock Pen Stand</h3>
+            <div class="product-price">₹2,800</div>
+            <div class="product-artisan">Ramesh Mohapatra • Dhenkanal, Odisha</div>
+          </div>
+        </a>
+
+        <!-- 10. The Musicians -->
+        <a href="product.html" class="product-card" data-category="sacred-geometry" data-price="18000">
+          <div class="product-img">
+            <img src="the%20musicians.JPG" alt="The Musicians" onerror="this.style.display='none'; this.parentNode.innerHTML='X'">
+            <img src="pics 2/musicians.png" alt="Musicians - In Use" class="hover-img">
+          </div>
+          <div class="product-info">
+            <h3>The Musicians</h3>
+            <div class="product-price">₹18,000</div>
+            <div class="product-artisan">Lata Pradhan • Dhenkanal, Odisha</div>
+          </div>
+        </a>
+
+        <!-- 11. Nandi Maharaj -->
+        <a href="product.html" class="product-card" data-category="totemic-animals" data-price="12000">
+          <div class="product-img">
+            <img src="Nandi%20Maharaj.JPG" alt="Nandi Maharaj" onerror="this.style.display='none'; this.parentNode.innerHTML='X'">
+            <img src="pics 2/nandi maharaj.png" alt="Nandi Maharaj - In Use" class="hover-img">
+          </div>
+          <div class="product-info">
+            <h3>Nandi Maharaj</h3>
+            <div class="product-price">₹12,000</div>
+            <div class="product-artisan">Sujata Behera • Dhenkanal, Odisha</div>
+          </div>
+        </a>
+
+        <!-- 12. Elephant -->
+        <a href="product.html" class="product-card" data-category="totemic-animals" data-price="6500">
+          <div class="product-img">
+            <img src="elephant.JPG" alt="Elephant" onerror="this.style.display='none'; this.parentNode.innerHTML='X'">
+            <img src="pics 2/elephant1.jpg" alt="Elephant - In Use" class="hover-img">
+          </div>
+          <div class="product-info">
+            <h3>Elephant</h3>
+            <div class="product-price">₹6,500</div>
+            <div class="product-artisan">Lata Pradhan • Dhenkanal, Odisha</div>
+          </div>
+        </a>
+      </div>
+      
+      <div class="load-more">
+        <button class="btn btn-outlined">Load More</button>
+      </div>
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container footer-content">
+      <div class="footer-col">
+        <h4>QUICK LINKS</h4>
+        <ul>
+          <li><a href="story.html">Our Story</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>INFORMATION</h4>
+        <ul>
+          <li><a href="#">Terms and Conditions</a></li>
+          <li><a href="#">Shipping</a></li>
+          <li><a href="#">Returns</a></li>
+          <li><a href="#">FAQ</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>HELP</h4>
+        <ul>
+          <li><a href="#">📞 +91 98765 43210</a></li>
+          <li><a href="#">✉️ archive@kansya.in</a></li>
+          <li><a href="#">🕒 Active (Mon-Sat) 10 AM - 6 PM</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>SUBSCRIBE TO OUR NEWSLETTER</h4>
+        <form style="display: flex; gap: 0; margin-bottom: 30px;">
+          <input type="email" placeholder="Your e..." style="padding: 10px; border: 1px solid var(--clr-border); border-right: none; flex: 1; outline: none; font-family: var(--font-body); background: var(--clr-white);">
+          <button type="submit" class="btn btn-filled" style="padding: 10px 20px;">SUBSCRIBE</button>
+        </form>
+        <h4>GIVE US A FOLLOW</h4>
+        <div class="social-icons" style="display: flex; gap: 15px;">
+          <a href="#" class="social-circle">f</a>
+          <a href="#" class="social-circle">x</a>
+          <a href="#" class="social-circle">in</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom" style="text-align: left; padding-left: 40px; padding-right: 40px; max-width: 1400px; margin-left: auto; margin-right: auto;">
+      &copy; 2026 Kansya Collective. All rights reserved.
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

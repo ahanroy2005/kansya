@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Figurine Pendant | KANSYA Archive</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Inter:wght@400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- GLOBAL NAVIGATION -->
+  <nav class="navbar">
+    <div class="container nav-container">
+      <div class="logo">
+        <a href="index.html"><img src="kansya-logo.png" alt="KANSYA" onerror="this.src='kansya-logo-2.png'"></a>
+      </div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="collections.html" class="active">Collections</a></li>
+        <li><a href="artisans.html">Shop from Artisans</a></li>
+        <li><a href="story.html">Our Story</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="nav-icons">
+        <a href="collections.html">🔍</a>
+        <a href="#">♡</a>
+        <a href="cart.html">🛒<span class="cart-count" id="cart-count">0</span></a>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <div class="container">
+      <div class="product-detail-layout">
+        <!-- Left Column: Images -->
+        <div class="product-gallery">
+          <div class="main-image">
+            <img src="Figurine%20Pendant.JPG" id="main-image-img" alt="Figurine Pendant" onerror="this.style.display='none'; this.parentNode.innerHTML='X'">
+          </div>
+          <div class="thumbnails">
+            <div class="thumb active">
+              <img src="Figurine%20Pendant.JPG" alt="Figurine Pendant" onerror="this.style.display='none'">
+            </div>
+            <div class="thumb">
+              <img src="../DOKRA%20IMAGES/DSC00868.JPG" alt="Detail 1" onerror="this.style.display='none'">
+            </div>
+            <div class="thumb">
+              <img src="../DOKRA%20IMAGES/DSC00873.JPG" alt="Detail 2" onerror="this.style.display='none'">
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Column: Info -->
+        <div class="product-info-col">
+          <div class="breadcrumb">
+            <a href="collections.html">Collections</a> > <a href="#">Totemic Animals</a> > Figurine Pendant
+          </div>
+          
+          <span class="product-label">Signature Collection</span>
+          <h1>FIGURINE PENDANT</h1>
+          <div class="detail-price">₹6,500</div>
+          
+          <p class="description">
+            A masterful representation of the revered elephant. Hand-finished using the ancient lost-wax lost-wax technique, this piece is highly symbolic of strength, wisdom, and prosperity in the Dhokra tradition.
+          </p>
+          
+          <div class="specs-tab">
+            <div class="spec-item">
+              <span class="spec-label">Material</span>
+              <span>Bell Metal / Brass</span>
+            </div>
+            <div class="spec-item">
+              <span class="spec-label">Dimensions</span>
+              <span>H: 8in x L: 10in</span>
+            </div>
+            <div class="spec-item">
+              <span class="spec-label">Weight</span>
+              <span>2.4 kg</span>
+            </div>
+            <div class="spec-item">
+              <span class="spec-label">Finish</span>
+              <span>Antique Raw</span>
+            </div>
+            <div class="spec-item">
+              <span class="spec-label">Region</span>
+              <span>Dhenkanal, Odisha</span>
+            </div>
+            <div class="spec-item">
+              <span class="spec-label">Technique</span>
+              <span>Lost-Wax Casting</span>
+            </div>
+          </div>
+          
+          <div class="action-btns">
+            <button class="btn btn-filled add-to-cart-btn">Add to Cart</button>
+            <button class="btn btn-outlined">Reserve for Viewing</button>
+          </div>
+          
+          <div class="artisan-profile">
+            <div class="profile-avatar">
+              <img src="lakshmi%20sahoo.png.webp" alt="Sujata Behera" onerror="this.style.display='none'">
+            </div>
+            <div class="profile-info">
+              <h4>Sujata Behera</h4>
+              <p>Ritual Vessels & Masks • 28 Years Experience</p>
+              <a href="artisans.html">Meet the Artisan</a>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+      
+      <!-- Related Artifacts -->
+      <section class="related-artifacts" style="padding-top: 80px;">
+        <h2 class="section-title">Related Artifacts</h2>
+        <div class="product-grid" style="padding-top: 20px;">
+          <!-- Card 1 -->
+          <a href="product.html" class="product-card">
+            <div class="product-img">
+              <img src="Nandi%20Maharaj.JPG" alt="Nandi Maharaj" onerror="this.style.display='none'; this.parentNode.innerHTML='X'">
+            </div>
+            <div class="product-info">
+              <h3>Nandi Maharaj</h3>
+              <div class="product-price">₹12,000</div>
+              <div class="product-artisan">Sujata Behera</div>
+            </div>
+          </a>
+          <!-- Card 2 -->
+          <a href="product.html" class="product-card">
+            <div class="product-img">
+              <img src="durga%20mask.JPG" alt="Durga Mask" onerror="this.style.display='none'; this.parentNode.innerHTML='X'">
+            </div>
+            <div class="product-info">
+              <h3>Durga Mask</h3>
+              <div class="product-price">₹15,000</div>
+              <div class="product-artisan">Lata Pradhan</div>
+            </div>
+          </a>
+          <!-- Card 3 -->
+          <a href="product.html" class="product-card">
+            <div class="product-img">
+              <img src="the%20musicians.JPG" alt="The Musicians" onerror="this.style.display='none'; this.parentNode.innerHTML='X'">
+            </div>
+            <div class="product-info">
+              <h3>The Musicians</h3>
+              <div class="product-price">₹18,000</div>
+              <div class="product-artisan">Lata Pradhan</div>
+            </div>
+          </a>
+        </div>
+      </section>
+      
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container footer-content">
+      <div class="footer-col">
+        <h4>QUICK LINKS</h4>
+        <ul>
+          <li><a href="story.html">Our Story</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>INFORMATION</h4>
+        <ul>
+          <li><a href="#">Terms and Conditions</a></li>
+          <li><a href="#">Shipping</a></li>
+          <li><a href="#">Returns</a></li>
+          <li><a href="#">FAQ</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>HELP</h4>
+        <ul>
+          <li><a href="#">📞 +91 98765 43210</a></li>
+          <li><a href="#">✉️ archive@kansya.in</a></li>
+          <li><a href="#">🕒 Active (Mon-Sat) 10 AM - 6 PM</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>SUBSCRIBE TO OUR NEWSLETTER</h4>
+        <form style="display: flex; gap: 0; margin-bottom: 30px;">
+          <input type="email" placeholder="Your e..." style="padding: 10px; border: 1px solid var(--clr-border); border-right: none; flex: 1; outline: none; font-family: var(--font-body); background: var(--clr-white);">
+          <button type="submit" class="btn btn-filled" style="padding: 10px 20px;">SUBSCRIBE</button>
+        </form>
+        <h4>GIVE US A FOLLOW</h4>
+        <div class="social-icons" style="display: flex; gap: 15px;">
+          <a href="#" class="social-circle">f</a>
+          <a href="#" class="social-circle">x</a>
+          <a href="#" class="social-circle">in</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom" style="text-align: left; padding-left: 40px; padding-right: 40px; max-width: 1400px; margin-left: auto; margin-right: auto;">
+      &copy; 2026 Kansya Collective. All rights reserved.
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

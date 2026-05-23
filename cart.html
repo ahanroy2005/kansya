@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Cart | KANSYA Archive</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Inter:wght@400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .cart-container {
+      max-width: 900px;
+      margin: 120px auto;
+      padding: 0 40px;
+      min-height: 50vh;
+    }
+    .cart-header {
+      font-family: var(--font-heading);
+      font-size: 2.5rem;
+      margin-bottom: 40px;
+      color: var(--clr-text-secondary);
+      border-bottom: 1px solid var(--clr-border);
+      padding-bottom: 20px;
+    }
+    .cart-items {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      margin-bottom: 50px;
+    }
+    .cart-item {
+      display: flex;
+      gap: 30px;
+      border-bottom: 1px solid var(--clr-border);
+      padding-bottom: 30px;
+      align-items: center;
+    }
+    .cart-item-img {
+      width: 120px;
+      height: 120px;
+      object-fit: cover;
+      background-color: var(--clr-surface);
+    }
+    .cart-item-info {
+      flex: 1;
+    }
+    .cart-item-title {
+      font-family: var(--font-heading);
+      font-size: 1.5rem;
+      color: var(--clr-text-secondary);
+      margin-bottom: 5px;
+    }
+    .cart-item-price {
+      font-family: var(--font-body);
+      font-weight: 600;
+      color: var(--clr-accent);
+    }
+    .cart-item-remove {
+      background: none;
+      border: none;
+      color: var(--clr-text-secondary);
+      text-decoration: underline;
+      cursor: pointer;
+      font-family: var(--font-body);
+      font-size: 0.9rem;
+      margin-top: 15px;
+      padding: 0;
+    }
+    .cart-summary {
+      background-color: var(--clr-surface);
+      padding: 40px;
+      text-align: right;
+    }
+    .cart-total {
+      font-family: var(--font-heading);
+      font-size: 2rem;
+      color: var(--clr-text-secondary);
+      margin-bottom: 20px;
+    }
+    .empty-cart-msg {
+      text-align: center;
+      font-family: var(--font-body);
+      color: var(--clr-text-secondary);
+      padding: 60px 0;
+      font-size: 1.2rem;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- GLOBAL NAVIGATION -->
+  <nav class="navbar">
+    <div class="container nav-container">
+      <div class="logo">
+        <a href="index.html"><img src="kansya-logo.png" alt="KANSYA" onerror="this.src='kansya-logo-2.png'"></a>
+      </div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="collections.html">Collections</a></li>
+        <li><a href="artisans.html">Shop from Artisans</a></li>
+        <li><a href="story.html">Our Story</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="nav-icons">
+        <a href="collections.html">🔍</a>
+        <a href="#">♡</a>
+        <a href="cart.html">🛒<span class="cart-count" id="cart-count">0</span></a>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <div class="cart-container">
+      <h1 class="cart-header">Your Archive</h1>
+      
+      <div id="cart-content">
+        <!-- Cart items injected here via JS -->
+      </div>
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container footer-content">
+      <div class="footer-col">
+        <h4>QUICK LINKS</h4>
+        <ul>
+          <li><a href="story.html">Our Story</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>INFORMATION</h4>
+        <ul>
+          <li><a href="#">Terms and Conditions</a></li>
+          <li><a href="#">Shipping</a></li>
+          <li><a href="#">Returns</a></li>
+          <li><a href="#">FAQ</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>HELP</h4>
+        <ul>
+          <li><a href="#">📞 +91 98765 43210</a></li>
+          <li><a href="#">✉️ archive@kansya.in</a></li>
+          <li><a href="#">🕒 Active (Mon-Sat) 10 AM - 6 PM</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>SUBSCRIBE TO OUR NEWSLETTER</h4>
+        <form style="display: flex; gap: 0; margin-bottom: 30px;">
+          <input type="email" placeholder="Your e..." style="padding: 10px; border: 1px solid var(--clr-border); border-right: none; flex: 1; outline: none; font-family: var(--font-body); background: var(--clr-white);">
+          <button type="submit" class="btn btn-filled" style="padding: 10px 20px;">SUBSCRIBE</button>
+        </form>
+        <h4>GIVE US A FOLLOW</h4>
+        <div class="social-icons" style="display: flex; gap: 15px;">
+          <a href="#" class="social-circle">f</a>
+          <a href="#" class="social-circle">x</a>
+          <a href="#" class="social-circle">in</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom" style="text-align: left; padding-left: 40px; padding-right: 40px; max-width: 1400px; margin-left: auto; margin-right: auto;">
+      &copy; 2026 Kansya Collective. All rights reserved.
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

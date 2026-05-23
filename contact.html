@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | KANSYA</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Inter:wght@400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- GLOBAL NAVIGATION -->
+  <nav class="navbar">
+    <div class="container nav-container">
+      <div class="logo">
+        <a href="index.html"><img src="kansya-logo.png" alt="KANSYA" onerror="this.src='kansya-logo-2.png'"></a>
+      </div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="collections.html">Collections</a></li>
+        <li><a href="artisans.html">Shop from Artisans</a></li>
+        <li><a href="story.html">Our Story</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+      <div class="nav-icons">
+        <a href="collections.html">🔍</a>
+        <a href="#">♡</a>
+        <a href="cart.html">🛒<span class="cart-count" id="cart-count">0</span></a>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <div class="container">
+      <div class="page-header" style="border-bottom: none; padding-bottom: 0;">
+        <h1 style="font-family: var(--font-logo); font-size: 5rem; letter-spacing: 5px; transform: scaleY(1.2); color: var(--clr-accent);">CONTACT MANIFCSa</h1>
+      </div>
+
+      <div class="contact-layout">
+        <!-- Left: Form -->
+        <div class="contact-form">
+          <h2>Begin Transmission</h2>
+          <form id="contact-form">
+            <div class="form-group">
+              <input type="text" placeholder="Name" required>
+            </div>
+            <div class="form-group">
+              <input type="email" placeholder="Email" required>
+            </div>
+            <div class="form-group">
+              <select required>
+                <option value="" disabled selected>Subject</option>
+                <option value="general">General Inquiry</option>
+                <option value="commission">Commission a Piece</option>
+                <option value="partnership">Artisan Partnership</option>
+                <option value="press">Press</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <textarea placeholder="Message" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-filled">Execute Transmission</button>
+          </form>
+        </div>
+
+        <!-- Right: Info -->
+        <div class="info-block">
+          <div style="margin-bottom: 40px;">
+            <h3>Transmission Channels</h3>
+            <p><strong>Email:</strong> archive@kansya.in</p>
+            <p><strong>Phone:</strong> +91 98765 43210</p>
+            <p><strong>Hours:</strong> Mon - Sat, 10:00 AM - 6:00 PM IST</p>
+          </div>
+
+          <div>
+            <h3>Geographic Coordinates</h3>
+            <div style="margin-top: 16px; border: 1px solid var(--clr-border); overflow: hidden;">
+              <img src="dhenkanal-map.png" alt="Siminai Village, Dhenkanal" style="width: 100%; display: block; object-fit: cover;">
+            </div>
+            <div style="margin-top: 12px; font-family: var(--font-body); font-size: 0.9rem; color: var(--clr-text-secondary); letter-spacing: 0.5px;">
+              <strong>20.6500° N, 85.5600° E</strong><br>
+              Siminai Village, Dhenkanal, Odisha — 759001
+            </div>
+            <p style="font-size: 0.9rem; opacity: 0.8; margin-top: 10px;">Our collective operates across multiple foundries in Dhenkanal, Odisha.</p>
+          </div>
+        </div>
+      </div>
+      
+      <!-- FAQ Section -->
+      <section class="faq-section">
+        <h2>Frequently Asked Questions</h2>
+        
+        <details>
+          <summary>How long is the casting cycle?</summary>
+          <p>The entire lost-wax process for a single piece can take anywhere from 15 to 45 days, depending on the complexity and size. Large totemic pieces or elaborate ritual vessels require significant drying times for the clay molds before firing.</p>
+        </details>
+        
+        <details>
+          <summary>Can I visit the foundry?</summary>
+          <p>Yes, we arrange guided visits to our partnered foundries in Dhenkanal, Odisha during the winter months (November to February). Please reach out via the transmission form to inquire about availability.</p>
+        </details>
+        
+        <details>
+          <summary>Maintenance of Dhokra items?</summary>
+          <p>Bell metal naturally oxidizes over time, developing a rich, dark patina that many collectors desire. If you prefer to maintain the golden hue, gently polish the piece with a soft cloth and a traditional mixture of tamarind and salt, or a specialized brass polish. Avoid harsh chemicals.</p>
+        </details>
+      </section>
+
+      <!-- Reviews Section -->
+      <section class="reviews">
+        <h2>Collective Echoes</h2>
+        <div class="reviews-grid">
+          <div class="review-card">
+            <div class="stars">★★★★★</div>
+            <p class="review-text">"The Sentinel Vessel I received is not just decor; it has a presence. You can feel the weight of history in the raw finish."</p>
+            <div class="review-author">— Ananya S., Architect</div>
+          </div>
+          <div class="review-card">
+            <div class="stars">★★★★★</div>
+            <p class="review-text">"Kansya's curation is unmatched. The piece arrived beautifully packaged, with a profound connection to the artisan."</p>
+            <div class="review-author">— Rahul M., Collector</div>
+          </div>
+          <div class="review-card">
+            <div class="stars">★★★★☆</div>
+            <p class="review-text">"A stunning Durga Mask that now anchors my living room. The brutalist presentation truly honors the craft."</p>
+            <div class="review-author">— Divya P., Designer</div>
+          </div>
+        </div>
+      </section>
+      
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container footer-content">
+      <div class="footer-col">
+        <h4>QUICK LINKS</h4>
+        <ul>
+          <li><a href="story.html">Our Story</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>INFORMATION</h4>
+        <ul>
+          <li><a href="#">Terms and Conditions</a></li>
+          <li><a href="#">Shipping</a></li>
+          <li><a href="#">Returns</a></li>
+          <li><a href="#">FAQ</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>HELP</h4>
+        <ul>
+          <li><a href="#">📞 +91 98765 43210</a></li>
+          <li><a href="#">✉️ archive@kansya.in</a></li>
+          <li><a href="#">🕒 Active (Mon-Sat) 10 AM - 6 PM</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>SUBSCRIBE TO OUR NEWSLETTER</h4>
+        <form style="display: flex; gap: 0; margin-bottom: 30px;">
+          <input type="email" placeholder="Your e..." style="padding: 10px; border: 1px solid var(--clr-border); border-right: none; flex: 1; outline: none; font-family: var(--font-body); background: var(--clr-white);">
+          <button type="submit" class="btn btn-filled" style="padding: 10px 20px;">SUBSCRIBE</button>
+        </form>
+        <h4>GIVE US A FOLLOW</h4>
+        <div class="social-icons" style="display: flex; gap: 15px;">
+          <a href="#" class="social-circle">f</a>
+          <a href="#" class="social-circle">x</a>
+          <a href="#" class="social-circle">in</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom" style="text-align: left; padding-left: 40px; padding-right: 40px; max-width: 1400px; margin-left: auto; margin-right: auto;">
+      &copy; 2026 Kansya Collective. All rights reserved.
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
